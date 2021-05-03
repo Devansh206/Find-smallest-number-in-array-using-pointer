@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+  int size,arr[100],i,*min;
+  printf("enter the size of the array");
+  scanf("%d",&size);
+  printf("enter %d integers",size);
+  for(i=0;i<=size;i++)
+  {  scanf("%d",&arr[i]);
+      }
+      min=arr;
+      *min=*arr;
+      for(i=1;i<size;i++)
+     { 
+        if(*(arr+i) < *min)
+        { *min=*arr;
+            }
+          }printf("smallest number is %d",*min);
+          return 0;
+          }
